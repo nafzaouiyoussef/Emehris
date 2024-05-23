@@ -8,7 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "4.35.1-next-server-fix.0",
+    "@netlify/plugin-nextjs": "4.33.1-lazy-server-import.0",
     "bootstrap": "^5.1.3",
     "next": "^12.1.6",
     "next-pwa": "^5.4.1",
