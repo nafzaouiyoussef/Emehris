@@ -1,0 +1,553 @@
+/************ insurance hero section ***************/ 
+.ins-hero-section {
+    margin-top: -100px;
+    padding: 160px 0 120px 0;
+    z-index: 1;
+    .rectangle-shape {
+        z-index: -1;
+    }
+    .ins-hero-curve {
+        z-index: 2;
+    }
+    .arrow-shape {
+        right: 26%; 
+        bottom: 500px;
+        z-index: -1;
+    }
+    .heart-sign {
+        width: 70px; 
+        height: 70px;
+        font-size: 30px;
+        left: 26%;
+        bottom: 290px;
+    }
+    .hero-play {
+        width: 90px; 
+        height: 90px;
+        font-size: 30px;
+        color: $ins-primary;
+        right: 30%; 
+        bottom: 400px;
+        transition: $transition-base; 
+        z-index: 1;
+        i {
+            line-height: 0;
+        }
+        &:hover {
+            transform: translateY(-6px);
+        }
+    }
+    .hero-content {
+        img {
+            position: relative;
+            z-index: 10;
+        }
+    }
+    @include screen-1920 {
+        padding-bottom: 60px;
+    }
+
+    @include screen-992 {
+        padding-bottom: 0;
+    }
+
+    @include screen-576 {
+        .hero-play {
+            width: 60px; 
+            height: 60px;
+            font-size: 24px;
+            bottom: 200px;
+        }
+    }
+}
+
+/************ insurance service section ************/ 
+.ins-service-top {
+    margin-top: -140px;
+    position: relative; 
+    z-index: 2;
+}
+.ins-service-contact {
+    padding: 40px 30px;
+    box-shadow: $ins-shadow;
+    .icon-wrapper {
+        background: $ins-warning;
+        width: 50px; 
+        height: 50px;
+    }
+}
+
+.ins-brand-single {
+    height: 58px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;  
+    border-radius: 4px;
+    transition: $transition-base;
+    &:hover {
+        background-color: $white;
+    }
+}
+
+.ins-title {
+    .subtitle {
+        color: $ins-primary;
+    }
+    mark {
+        padding: 0; 
+        background: transparent;
+        color: $ins-primary;
+    }
+}
+
+ .ins-service-card {
+    transition: $transition-base;
+    h5 {
+        transition: $transition-base; 
+        &:hover {
+            color: $ins-primary;
+        }
+    }
+    .ins-service-explore {
+        color: $ins-secondary;
+        transition: $transition-base; 
+        svg {
+            transition: $transition-base;
+            path {
+                transition: $transition-base;
+            }
+        }
+        &:hover {
+            color: $ins-primary;
+            svg {
+                stroke: $ins-primary;
+                path {
+                    stroke: $ins-primary;
+                    fill: $ins-primary;
+                }
+            }
+        }
+    }
+    &:hover {
+        box-shadow: $ins-shadow;
+    }
+}
+
+/************ insurance gallery ************/ 
+.ins-gallery-info-btns {
+    gap: 24px;
+    .video-icon {
+        i {
+            background: $ins-warning;
+            width: 50px; 
+            height: 50px;
+            border-radius: 50%;
+            color: $white;
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center;
+        }
+        span {
+            color: $ins-secondary;
+        }
+    }
+}
+
+.ins-gallery-slider {
+    .swiper-control {
+        position: absolute;
+        bottom: 10px;
+        width: 40px; 
+        height: 40px; 
+        border-radius: 50%;
+        color: $white;
+        z-index: 3;
+        text-align: center; 
+        line-height: 40px;
+        &.swiper-btn-prev {
+            background: $ins-secondary; 
+            transition: $transition-base; 
+            left: 62%;
+            &:hover {
+                background: $ins-primary;
+            }
+        }
+        &.swiper-btn-next {
+            background: $ins-primary;
+            transition: $transition-base; 
+            left: calc(62% + 55px);
+            &:hover {
+                background: $ins-secondary;
+            }
+        }
+    }
+    @include screen-768 {
+        width: 100%;
+        margin-left: 0;
+    }
+    @include screen-576 {
+        .swiper-control {
+            &.swiper-btn-prev {
+                left: 64%;
+            }
+        }
+    }
+}
+
+.ins-gallery-slide-single {
+    padding-bottom: 25px;
+    opacity: 0.3;
+    transition: $transition-base;
+    .ins-primary-btn {
+        left: 40px; 
+        bottom: -25px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.6s;
+    }
+    &.swiper-slide-active {
+        opacity: 1;
+        .ins-primary-btn {
+            opacity: 1; 
+            visibility: visible; 
+            bottom: 0;
+        }
+    }
+}
+
+/*********** achievement section **********/
+.ins-achivements-box {
+    padding: 24px 0 14px;
+    z-index: 1;
+    &::before {
+        content: ''; 
+        position: absolute;
+        left: -120px;
+        bottom: -120px; 
+        width: 200px;
+        height: 200px;
+        background: $ins-warning;
+        opacity: 0.1;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    &::after {
+        content: ''; 
+        position: absolute;
+        right: -90px;
+        top: -90px; 
+        width: 200px;
+        height: 200px;
+        background: $ins-primary;
+        opacity: 0.1;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .border-hr {
+        width: 100%; 
+        height: 1px;
+        background: $ins-border-color;
+        top: 50%;
+        left: 0; 
+        z-index: -1;
+        transform: translateY(-50%);
+    }
+    .border-vr {
+        width: 1px; 
+        height: 100%; 
+        background: $ins-border-color; 
+        left: 50%; 
+        top: 0; 
+        z-index: -1;
+        transform: translateX(-50%);
+    }
+}
+.ins-achievement-box-item {
+    padding: 34px;
+    h3 {
+        span {
+            color: $ins-secondary;
+        }
+    }
+    @include screen-576 {
+        padding: 16px;
+    }
+}
+
+.ins-info-list {
+    max-width: 460px;
+    li {
+        + li {
+            margin-top: 20px;
+        }
+        .icon-wrapper {
+            width: 60px; 
+            height: 60px; 
+            font-size: 30px;
+            &.bg-telegram {
+                background: $telegram-bg;
+            }
+            &.bg-discord {
+                background: $discord-bg;
+            }
+        }
+    }
+}
+
+/*********** get in touch section **********/
+.ins-contact-section {
+    z-index: 1;
+    &::before {
+        content: ''; 
+        position: absolute;
+        left: 0; 
+        top: 0; 
+        width: 100%; 
+        height: 100%; 
+        background: linear-gradient(95.5deg, #FFFFFF 42.48%, rgba(255, 255, 255, 0) 63.05%);
+        z-index: -1;
+    }
+    @include screen-1920 {
+        &::before {
+            width: 1930px;
+        }
+    }
+}
+
+.ins-contact-form {
+    .ins-input-field {
+        position: relative;
+        label {
+            position: absolute;
+            left: 20px;
+            top: -12px;
+            font-size: 14px; 
+            font-weight: 600;
+            color: $ins-secondary;
+            background: $white;
+            padding: 0 1px;
+        }
+        input, select {
+            padding: 13px 15px 10px;
+            outline: 0;
+            color: $ins-text;
+            &::placeholder {
+                color: $ins-placeholder; 
+            }
+        }
+    }
+}
+
+/************ team section start ***********/ 
+.ins-team-card {
+    padding: 48px 24px 30px;
+    transition: $transition-base;
+    .ins-team-social {
+        gap: 12px;
+        a {
+            width: 32px; 
+            height: 32px; 
+            background: $ins-light-color;
+            border-radius: 4px;
+            color: $ins-secondary;
+            display: inline-flex; 
+            align-items: center;
+            justify-content: center;
+            transition: $transition-base;
+        }
+    }
+    &:hover {
+        box-shadow: $ins-shadow;
+        .ins-team-social {
+            a { 
+                background: $ins-secondary; 
+                color: $white;
+                &:hover {
+                    background: $ins-primary;
+                }
+            }
+        }
+    }
+}
+
+.ins-center-explore {
+    a {
+        color: $ins-primary;
+        &:hover {
+            color: $ins-secondary;
+        }
+    }
+}
+
+/*********** feedback section start *********/ 
+.ins-feedback-section {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ins-feedback-slider-wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 80px;
+
+    .swiper-control-btn {
+        width: 48px; 
+        height: 48px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 48px;
+        color: $white;
+        transition: $transition-base; 
+        position: absolute;
+        top: 50%; 
+        transform: translateY(-50%);
+        z-index: 1;
+
+        &.swiper-btn-prev {
+            background-color: $ins-secondary;
+            left: -80px;
+            &:hover {
+                background-color: $ins-primary;
+            }
+        }
+        &.swiper-btn-next {
+            background-color: $ins-primary;
+            right: -80px;
+            &:hover {
+                background-color: $ins-secondary;
+            }
+        }
+    }
+    @include screen-1200 {
+        max-width: 100%; 
+        padding: 0;
+    }
+}
+.ins-feedback-content {
+    .ins-feedback-author {
+        img {
+            width: 55px;
+        }
+    }
+}
+
+/************ subscription area start ************/ 
+.ins-subscription {
+    background: $ins-color-primary-light;
+    padding: 70px 24px;
+    z-index: 1;
+    .circle-shape-right {
+        position: absolute;
+        right: -180px; 
+        top: -260px;
+        width: 410px;
+        height: 410px;
+        background: $ins-warning-shape;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .circle-shape-left {
+        position: absolute; 
+        left: -180px; 
+        bottom: -200px; 
+        width: 410px; 
+        height: 410px; 
+        background: $ins-color-secondary-light;
+        border-radius: 50%; 
+        z-index: -1;
+    }
+    .circle-shape-top {
+        position: absolute;
+        left: 210px;
+        top: -130px;
+        width: 254px; 
+        height: 254px; 
+        border-radius: 50%;
+        background: rgba($ins-color-secondary-light, 0.7);
+        z-index: -1;
+    }
+    
+}
+.ins-sb-form {
+    gap: 24px;
+    input {
+        padding: 12px 15px;
+        min-width: 330px;
+        outline: 0;
+    }
+    @include screen-576 {
+        gap: 16px;
+        input {
+            min-width: 100%;
+        }
+    }
+}
+
+
+/************* blog section start **************/ 
+.ins-blog-card {
+    transition: $transition-base;
+    .ins-feature-img {
+        img {
+            transition: $transition-base;
+        }
+    }
+    .ins-blog-content {
+        padding: 30px 24px 40px;
+        .ins-blog-meta {
+            span {
+                font-size: 14px;
+                font-weight: 500;
+                svg {
+                    margin-right: 6px;
+                }
+            }
+        }
+        .ins-heading {
+            transition: $transition-base; 
+            &:hover {
+                color: $ins-primary;
+            }
+        }
+        .ins-service-explore {
+            color: $ins-secondary;
+            svg {
+                path {
+                    transition: $transition-base;
+                }
+            }
+            &:hover {
+                color: $ins-primary;
+                svg {
+                    path {
+                        stroke: $ins-primary; 
+                        fill: $ins-primary;
+                    }
+                }
+            }
+        }
+    }
+    &:hover {
+        box-shadow: $ins-shadow;
+        .ins-feature-img {
+            img {
+                transform: scale(1.03);
+            }
+        }
+    }
+}
+.ins-btn-meta {
+    padding: 5px 15px;
+    background-color: rgba($ins-secondary, 0.1);
+    color: $ins-secondary;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 4px;
+    font-family: $headings-font-family; 
+    font-weight: 600;
+    transition: $transition-base; 
+    &:hover {
+        background: rgba($ins-primary, 0.1); 
+        color: $ins-primary;
+    }
+}
