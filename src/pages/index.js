@@ -5,7 +5,7 @@ import FooterShort from "@layout/Footer/FooterShort";
 import Navbar from "@layout/Header/Navbar";
 import LatestBlog from "@components/blogs/LatestBlog";
 import SupportOne from "@components/support/SupportOne";
-import IntegrationOne from "@components/integration/IntegrationOne";
+// import IntegrationOne from "@components/integration/IntegrationOne";
 import TestimonialOne from "@components/testimonial/TestimonialOne";
 import WorkProcessTwo from "@components/workprocess/WorkProcessTwo";
 import HeroSectionThree from "@components/hero-section/HeroSectionThree";
@@ -19,14 +19,18 @@ export default function Home() {
     <Layout>
       <Navbar />
       <HeroSectionThree />
-      <WorkProcessTwo />
+      
       <DigiSerives />
       <FeatureImgContentFour />
       <FeatureImgContentFive />
-      <IntegrationOne />
       <TestimonialOne />
+      {/* <IntegrationOne /> */}
+      
       <PricingOne header ptClass="pt-120" />
+      <WorkProcessTwo />
       <LatestBlog />
+      
+
       <SupportOne className />
       <QuickSupport />
       <FooterShort />
